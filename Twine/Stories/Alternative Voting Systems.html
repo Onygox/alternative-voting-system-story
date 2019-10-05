@@ -4,51 +4,64 @@ body, tw-story
 {
   font-family: Open-Sans, sans-serif;
   font-size: 18px;
-  background-color: #ffffff;
+  background-color: grey;
+}
+
+br+br {
+	content: "";
+	display: inline-block;
+	margin-top: 1em;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.chat-background {
+	background-color: lightgray;
+  	right: 100px;
+  	width: 620px;
 }
 
 .sender-name {
-	color: grey;
+	color: white;
 	text-align: left;
-  	font-size: 12px;
+  	font-size: 14px;
+  	/*margin: 12px;*/
+  	font-weight: 700;
 }
 
 .my-name {
-	color: grey;
+  	/*margin-top: 12px;*/
+	color: white;
 	text-align: right;
-  	font-size: 12px;
+  	font-size: 14px;
+  	font-weight: 700;
 }
 
 .received-text {
-	color:black;
+	color: white;
+  	/*font-weight: 700;*/
 	text-align: left;
-
 	width: 620px;
-
 	border-radius: 12px;
-
 	padding: 12px;
-
-	background-color: lightgreen;
-	/*animation-name: example;
-	animation-duration: 4s;
-	overflow: auto;*/
+	/*background-color: lightgreen;
+	transition-duration: 1s;*/
+  	margin: -6px;
 }
 
 .sent-text {
-	color:black;
+	color: white;
+  	/*font-weight: 700;*/
   	text-align: right;
-
 	width: 620px;
-  
   	border-radius: 12px;
-
 	padding: 12px;
-
-	background-color: lightblue;
-	/*animation-name: example;
-	animation-duration: 4s;
-	overflow: auto;*/
+	/*background-color: lightblue;
+	transition-duration: 1s;*/
+  	margin: -6px;
 }
 
 .text-entry-box {
@@ -71,75 +84,129 @@ body, tw-story
   	color: black;
   	padding: 6px;
   	margin-top: 48px;
+  	text-align: center;
 }
 
+.enter-leave-chat {
+  	text-align: center;
+  	font-size:  14px;
+  	color: white;
+  	margin: -6px;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*document.onclick = function() {
+   window.scrollTo(0, window.height);
+}*/
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-
-</script><tw-passagedata pid="1" name="Monday" tags="" position="497,136" size="100,100">|endless&gt;[
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;
+</script><tw-passagedata pid="1" name="Monday" tags="" position="497,161" size="100,100">|endless&gt;[
+	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
+	(live: .75s)[
+	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;Uncle Sam has joined the chat.&lt;/i&gt;&lt;/div&gt;
+	(stop:)
+	]
+	(live: 1.5s)[
+		(append: ?endless)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;]
+		(stop:)
+	]
+]
 |links&gt;[{
-&lt;div class=&quot;text-entry-box&quot;&gt;
-	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;sup&quot;)[
+(live: 1.5s) [
+	  &lt;div class=&quot;text-entry-box&quot;&gt;
+		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;sup&quot;)[
+			  (replace: ?links)[]
+				(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;sup&lt;/div&gt;
+				(display: &quot;First Response&quot;)
+			]
+		  ]&lt;/div&gt;
+		  &lt;br&gt;
+		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;what?&quot;)[
+			  (replace: ?links)[]
+			  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;what?&lt;/div&gt;
+			  (display: &quot;First Response&quot;)
+			]
+		  ]&lt;/div&gt;
+	  &lt;/div&gt;
+  ]
+}]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">(live:1s)[
+	  &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text&quot;&gt;who are you voting for&lt;/div&gt;
+	(stop:)
+]
+|links&gt;[{
+(live:1.5s)[
+  &lt;div class=&quot;text-entry-box&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i dont need to tell you&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;sup&lt;/div&gt;(display: &quot;First Response&quot;)]
-	]&lt;/div&gt;
-	&lt;br&gt;
-	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;what?&quot;)[
+		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i dont need to tell you&lt;/div&gt;(display:&quot;Hidden Information&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;isabelle watson&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;what?&lt;/div&gt;(display: &quot;First Response&quot;)]
-	]&lt;/div&gt;
-&lt;/div&gt;
-}]\
-]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">&lt;br&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;who are you voting for&lt;/div&gt;
+		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;isabelle watson&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;mark rebel&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;mark rebel&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="3" name="Transparency is Key" tags="" position="403,436" size="100,100">(live:1s) [
+	&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+	&lt;div class=&quot;received-text&quot;&gt;oh?&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
-&lt;div class=&quot;text-entry-box&quot;&gt;
-  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i dont need to tell you&quot;)[
-	  (replace: ?links)[]
-	  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i dont need to tell you&lt;/div&gt;(display:&quot;Hidden Information&quot;)]
-	  ]&lt;/div&gt;&lt;br&gt;
-  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;isabelle watson&quot;)[
-	  (replace: ?links)[]
-	  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;isabelle watson&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
-	  ]&lt;/div&gt;&lt;br&gt;
-  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;mark rebel&quot;)[
-	  (replace: ?links)[]
-	  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;mark rebel&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
-	  ]&lt;/div&gt;&lt;br&gt;
-&lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="3" name="Transparency is Key" tags="" position="402,434" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;oh yeah?&lt;/div&gt;
-|links&gt;[{
+(live:1.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;how about you&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;how about you&lt;/div&gt;(display: &quot;Second Response&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="4" name="Hidden Information" tags="" position="601,438" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="4" name="Hidden Information" tags="" position="600,437" size="100,100">(live:1s)[
+&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;good answer&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;never know what Big Data could find out - they&#39;re always monitoring these channels of communication&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
+&lt;div class=&quot;received-text&quot;&gt;Big Datas always listening&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:2.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
-	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;dont worry...&quot;)[
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;why are you so paranoid?&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;eh, dont worry about Big Data, weve got nothing to hide&lt;/div&gt;(display: &quot;Big Data&quot;)]
+		(append: ?endless)[
+			&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;why are you so paranoid?&lt;/div&gt;&lt;br&gt;
+			(live:1s)[
+			&lt;div class=&quot;sent-text&quot;&gt;weve got nothing to hide&lt;/div&gt;(display: &quot;Big Data&quot;)
+			(stop:)
+			]
+		]
 	]&lt;/div&gt;
-&lt;/div&gt;	
-}]</tw-passagedata><tw-passagedata pid="5" name="Second Response" tags="" position="404,578" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+&lt;/div&gt;
+]
+}]</tw-passagedata><tw-passagedata pid="5" name="Second Response" tags="" position="403,578" size="100,100">(live:1s)[
+&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;well,&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
 &lt;div class=&quot;received-text&quot;&gt;i try to be as neutral as possible&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:3s)[
 &lt;div class=&quot;received-text&quot;&gt;but lets just say i lean towards the winning side&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:3.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;whatever&quot;)[
 		(replace: ?links)[]
@@ -150,23 +217,37 @@ body, tw-story
 		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i hate to think what you could be implying...&lt;/div&gt;(display: &quot;A Question&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="6" name="A Question" tags="" position="504,719" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="6" name="A Question" tags="" position="504,719" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;anyway&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
 &lt;div class=&quot;received-text&quot;&gt;come with me to the polling booth this Sunday&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:3s)[
 &lt;div class=&quot;received-text&quot;&gt;it could be a date&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:3.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;...&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[(display: &quot;A Pause&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="7" name="Big Data" tags="" position="600,581" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="7" name="Big Data" tags="" position="600,580" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;speak for yourself&lt;/div&gt;
+(stop:)
+]
 
 |links&gt;[{
+(live:1.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;whatever&quot;)[
@@ -182,41 +263,67 @@ body, tw-story
 	]&lt;/div&gt;
 	
 &lt;/div&gt;
+(stop:)
+]
 	
-}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="501,856" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="501,856" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;i can see you typing&lt;/div&gt;
-&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
 &lt;div class=&quot;received-text&quot;&gt;why are you thinking so long?&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:2.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;well, ...&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;well, our dating history has been... complicated, to say the least&lt;/div&gt;(display: &quot;A Reason&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="9" name="A Reason" tags="" position="498,998" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="9" name="A Reason" tags="" position="498,998" size="100,100">(live:1s)[
+&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;oh come on, that was just a couple of times&lt;/div&gt;
-&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
 &lt;div class=&quot;received-text&quot;&gt;not worth raising a fuss about&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:2.5s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;you flaked on me five times&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[
 		&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;
 		&lt;div class=&quot;sent-text&quot;&gt;you flaked on me five times&lt;/div&gt;&lt;br&gt;
-		&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;
+		(live:1s)[
 		&lt;div class=&quot;sent-text&quot;&gt;i gave you another chance&lt;/div&gt;&lt;br&gt;
-		&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;
+		(stop:)
+		]
+		(live:2s)[
 		&lt;div class=&quot;sent-text&quot;&gt;FOUR times&lt;/div&gt;
+		(stop:)
+		]
 		(display: &quot;A Defense&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="10" name="A Defense" tags="" position="499,1137" size="100,100">&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="10" name="A Defense" tags="" position="499,1137" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text&quot;&gt;three of those times werent my fault&lt;/div&gt;
-&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;my colleagues pranked me&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
+&lt;div class=&quot;received-text&quot;&gt;my bros pranked me&lt;/div&gt;
+(stop:)
+]
 |links&gt;[{
+(live:3s)[
 &lt;div class=&quot;text-entry-box&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;im not giving you another chance&quot;)[
 		(replace: ?links)[]
@@ -227,6 +334,18 @@ body, tw-story
 		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;alright ill consider it&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-}]</tw-passagedata><tw-passagedata pid="11" name="Educational Side Note One" tags="" position="499,1277" size="100,100">&lt;div class=&quot;educational-side-note&quot;&gt;Due to exploitable holes in America&#39;s electoral system, the winner of the popular vote &lt;i&gt;(that is to say, the presidential candidate who received the majority of votes from citizens)&lt;/i&gt; lost the electoral college&#39;s vote five times over the course of U.S. history.&lt;/div&gt;
-&lt;br&gt;&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;see you there at 12.&lt;/div&gt;</tw-passagedata></tw-storydata>
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="11" name="Educational Side Note One" tags="" position="499,1277" size="100,100">(live:.5s)[
+&lt;div class=&quot;educational-side-note&quot;&gt;Due to exploitable holes in America&#39;s electoral system, the winner of the popular vote &lt;i&gt;(that is to say, the presidential candidate who received the majority of votes from citizens)&lt;/i&gt; lost the electoral college&#39;s vote five times over the course of U.S. history.&lt;/div&gt;
+(stop:)
+]
+(live:1.5s)[
+&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
+&lt;div class=&quot;received-text&quot;&gt;see you there at 12.&lt;/div&gt;
+(stop:)
+]
+(live:2s)[
+&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;Uncle Sam left the chat.&lt;/i&gt;&lt;/div&gt;
+(stop:)
+]</tw-passagedata></tw-storydata>
