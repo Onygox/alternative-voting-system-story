@@ -4,7 +4,7 @@ body, tw-story
 {
   font-family: Open-Sans, sans-serif;
   font-size: 18px;
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 
 br+br {
@@ -52,7 +52,7 @@ p {
 }
 
 .received-text {
-	color: white;
+	color: #595959;
   	/*font-weight: 700;*/
 	text-align: left;
 	width: 620px;
@@ -64,7 +64,7 @@ p {
 }
 
 .sent-text {
-	color: white;
+	color: #595959;
   	/*font-weight: 700;*/
   	text-align: right;
 	width: 620px;
@@ -109,7 +109,7 @@ p {
 .enter-leave-chat {
   	text-align: center;
   	font-size:  14px;
-  	color: white;
+  	color: #808080;
   	margin: -6px;
   	font-style: italic;
 }
@@ -120,6 +120,10 @@ p {
 
 .big-negative-margin {
  margin-top: -124px;
+}
+
+.almostbig-negative-margin {
+ margin-top: -96px;
 }
 
 .medium-negative-margin {
@@ -137,6 +141,7 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
@@ -144,17 +149,18 @@ p {
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
 
+
 </script><tw-passagedata pid="1" name="Monday" tags="" position="497,161" size="100,100">|endless&gt;[
 	&lt;div class=&quot;day-name&quot;&gt;Monday&lt;/div&gt;
 	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
 	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	(live: .75s)[
-	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;Uncle Sam has joined the chat.&lt;/i&gt;&lt;/div&gt;
+	&lt;div class=&quot;enter-leave-chat medium-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam has joined the chat.&lt;/i&gt;&lt;/div&gt;
 	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	(stop:)
 	]
 	(live: 1.5s)[
-		(append: ?endless)[&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-200px;&quot;&gt;Uncle Sam&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;]
+		(append: ?endless)[&lt;div class=&quot;sender-name &quot; style=&quot;margin-top:-200px;&quot;&gt;Uncle Sam&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text small-negative-margin&quot;&gt;hey&lt;/div&gt;]
 		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 		(stop:)
 	]
@@ -164,14 +170,14 @@ p {
 	  &lt;div class=&quot;text-entry-box&quot;&gt;
 		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;sup&quot;)[
 			  (replace: ?links)[]
-				(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;sup&lt;/div&gt;
+				(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text small-negative-margin&quot;&gt;sup&lt;/div&gt;
 				(display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
 		  &lt;br&gt;
-		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;what?&quot;)[
+		  &lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;what?&quot;)[
 			  (replace: ?links)[]
-			  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;what?&lt;/div&gt;
+			  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;what?&lt;/div&gt;
 			  (display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
@@ -179,35 +185,35 @@ p {
 	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
   ]
 }]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">(live:1s)[
-	  &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-	  &lt;div class=&quot;received-text&quot;&gt;are you voting for that self proclaimed socialist&lt;/div&gt;
+	  &lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;are you voting for that self proclaimed socialist&lt;/div&gt;
 	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	  (stop:)
 ]
 (live:2s)[
-	  &lt;div class=&quot;received-text&quot;&gt;whats his name&lt;/div&gt;
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;whats his name&lt;/div&gt;
 	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	(stop:)
 ]
 (live:3s)[
-	  &lt;div class=&quot;received-text&quot;&gt;sanders?&lt;/div&gt;
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;sanders?&lt;/div&gt;
 	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	(stop:)
 ]
 |links&gt;[{
 (live:3.5s)[
-  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box&quot;&gt;
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;yeah&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;yeah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name small-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;yeah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
 		]&lt;/div&gt;&lt;br&gt;
-	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;nah&quot;)[
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;nah&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;nah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name small-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;nah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
 		]&lt;/div&gt;&lt;br&gt;
-	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i dont need to tell you&quot;)[
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;i dont need to tell you&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i dont need to tell you&lt;/div&gt;(display:&quot;Hidden Information&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name medium-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;i dont need to tell you&lt;/div&gt;(display:&quot;Hidden Information&quot;)]
 		]&lt;/div&gt;
   &lt;/div&gt;
   &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
@@ -215,42 +221,44 @@ p {
 ]
 }]</tw-passagedata><tw-passagedata pid="3" name="Transparency is Key" tags="" position="403,436" size="100,100">(live:1s) [
 	&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-	&lt;div class=&quot;received-text&quot;&gt;oh?&lt;/div&gt;
+	&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;oh?&lt;/div&gt;
 	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:1.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;how about you&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;how about you&lt;/div&gt;(display: &quot;Second Response&quot;)]
-	]&lt;/div&gt;
+		(append: ?endless)[&lt;div class=&quot;my-name small-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;how about you&lt;/div&gt;(display: &quot;Second Response&quot;)]
+	]
+	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="4" name="Hidden Information" tags="" position="600,437" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;good answer&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;good answer&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;Big Datas always listening&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;Big Datas always listening&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:2.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;why are you so paranoid?&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[
-			&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;why are you so paranoid?&lt;/div&gt;&lt;br&gt;
+			&lt;div class=&quot;my-name big-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;why are you so paranoid?&lt;/div&gt;&lt;br&gt;
 			&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 			(live:1s)[
-			&lt;div class=&quot;sent-text&quot;&gt;weve got nothing to hide&lt;/div&gt;(display: &quot;Big Data&quot;)
+			&lt;div class=&quot;sent-text medium-negative-margin&quot;&gt;weve got nothing to hide&lt;/div&gt;(display: &quot;Big Data&quot;)
 			&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 			(stop:)
 			]
@@ -260,53 +268,53 @@ p {
 ]
 }]</tw-passagedata><tw-passagedata pid="5" name="Second Response" tags="" position="402,578" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;well,&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;well,&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;i try to be as neutral as possible&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;i try to be as neutral as possible&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
-&lt;div class=&quot;received-text&quot;&gt;so i cant say for sure until near the end&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;so i cant say for sure until near the end&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:3.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;whatever&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name medium-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
 	]&lt;/div&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;as long as you get your vote in the ballot&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;as long as you get your vote in the ballot&lt;/div&gt;(display: &quot;A Question&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name small-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;as long as you get your vote in the ballot&lt;/div&gt;(display: &quot;A Question&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="6" name="A Question" tags="" position="504,719" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;anyway&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;anyway&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;come with me to the polling booth this Sunday&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;come with me to the polling booth this Sunday&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
-&lt;div class=&quot;received-text&quot;&gt;it could be a date&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;it could be a date&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:3.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;...&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[(display: &quot;A Pause&quot;)]
@@ -316,24 +324,24 @@ p {
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="7" name="Big Data" tags="" position="600,580" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;speak for yourself&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;speak for yourself&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 
 |links&gt;[{
 (live:1.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;whatever&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name big-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
 
 	]&lt;/div&gt;
 	
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i hate to think what you could be implying...&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i hate to think what you could be implying...&lt;/div&gt;(display: &quot;A Question&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name big-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;i hate to think what you could be implying...&lt;/div&gt;(display: &quot;A Question&quot;)]
 
 	]&lt;/div&gt;
 	
@@ -342,22 +350,22 @@ p {
 (stop:)
 ]
 	
-}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="501,856" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;i can see you typing&lt;/div&gt;
+}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="501,856" size="100,100">(live:2s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;i can see you typing&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
-(live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;why are you thinking so long?&lt;/div&gt;
+(live:3.5s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;why are you thinking so long?&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
-(live:2.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+(live:4s)[
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;well, ...&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;well, our dating history has been... complicated, to say the least&lt;/div&gt;(display: &quot;A Reason&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name medium-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;well, our dating history has been... complicated, to say the least&lt;/div&gt;(display: &quot;A Reason&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
@@ -365,31 +373,31 @@ p {
 ]
 }]</tw-passagedata><tw-passagedata pid="9" name="A Reason" tags="" position="498,998" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;oh come on, that was just a couple of times&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;oh come on, that was just a couple of times&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;not worth raising a fuss about&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;not worth raising a fuss about&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:2.5s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;you flaked on me five times&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[
-		&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;
-		&lt;div class=&quot;sent-text&quot;&gt;you flaked on me five times&lt;/div&gt;&lt;br&gt;
+		&lt;div class=&quot;my-name medium-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;
+		&lt;div class=&quot;sent-text small-negative-margin&quot;&gt;you flaked on me five times&lt;/div&gt;&lt;br&gt;
 		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 		(live:1s)[
-		&lt;div class=&quot;sent-text&quot;&gt;i gave you another chance&lt;/div&gt;&lt;br&gt;
+		&lt;div class=&quot;sent-text medium-negative-margin&quot;&gt;i gave you another chance&lt;/div&gt;&lt;br&gt;
 		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 		(stop:)
 		]
 		(live:2s)[
-		&lt;div class=&quot;sent-text&quot;&gt;FOUR times&lt;/div&gt;
+		&lt;div class=&quot;sent-text big-negative-margin&quot;&gt;FOUR times&lt;/div&gt;
 		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 		(stop:)
 		]
@@ -403,32 +411,34 @@ p {
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
-}]</tw-passagedata><tw-passagedata pid="10" name="A Defense" tags="" position="499,1137" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;three of those times werent my fault&lt;/div&gt;
+}]</tw-passagedata><tw-passagedata pid="10" name="A Defense" tags="" position="499,1137" size="100,100">(live:1s)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;Uncle Sam&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;three of those times werent my fault&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;my bros pranked me&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;my bros pranked me&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
-(live:3s)[
-&lt;div class=&quot;sender-name&quot;&gt;Fact-Checker Bot&lt;/div&gt;&lt;div class=&quot;fact-checker-bot&quot;&gt;🚨 Bullshit Detected 🚨 Bullshit Detected 🚨 &lt;/div&gt;
-&lt;div class=&quot;educational-side-note&quot;&gt;Uncle Sam flaked out on the American Public five times. Due to exploitable holes in America&#39;s electoral system, the winner of the popular vote &lt;i&gt;(that is to say, the presidential candidate who received the majority of votes from citizens)&lt;/i&gt; lost the electoral college&#39;s vote five times over the course of U.S. history.&lt;br&gt;&lt;i&gt;&lt;a href=&quot;https://www.archives.gov/federal-register/electoral-college/historical.html&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;&lt;/div&gt;
+(live:3.5s)[
+&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;Fact-Checker Bot&lt;/div&gt;&lt;div class=&quot;fact-checker-bot&quot;&gt;🚨 Bullshit Detected 🚨 Bullshit Detected 🚨 &lt;/div&gt;
+&lt;div class=&quot;educational-side-note small-negative-margin&quot;&gt;Uncle Sam flaked out on the American Public five times. Due to exploitable holes in America&#39;s electoral system, the winner of the popular vote &lt;i&gt;(that is to say, the presidential candidate who received the majority of votes from citizens)&lt;/i&gt; lost the electoral college&#39;s vote five times over the course of U.S. history.&lt;br&gt;&lt;i&gt;&lt;a href=&quot;https://www.archives.gov/federal-register/electoral-college/historical.html&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:10s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;im not giving you another chance&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;im not giving you another chance&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name big-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;im not giving you another chance&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)]
+		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	]&lt;/div&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;alright ill consider it&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text&quot;&gt;alright ill consider it&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)]
+		(append: ?endless)[&lt;div class=&quot;my-name big-negative-margin&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;alright ill consider it&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)
+		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
 	]&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
@@ -436,27 +446,37 @@ p {
 ]
 }]</tw-passagedata><tw-passagedata pid="11" name="Educational Side Note One" tags="" position="499,1277" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;Uncle Sam&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;dont listen to the bots on this server&lt;/div&gt;
+&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;dont listen to the bots on this server&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text&quot;&gt;theyre a joke&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;theyre a joke&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
-&lt;div class=&quot;received-text&quot;&gt;see you there at 12.&lt;/div&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;see you there at 12.&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 (live:4s)[
-&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;Uncle Sam left the chat.&lt;/i&gt;&lt;/div&gt;
+&lt;div class=&quot;enter-leave-chat big-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam left the chat.&lt;/i&gt;&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
 (live:4.25s)[
-&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;log off&quot;)[
-		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has  left the chat.&lt;/i&gt;&lt;/div&gt;(display: &quot;Tuesday&quot;)]
+	  (live:1.75s)[
+		  (replace: ?links)[]
+		  (append: ?endless)[
+		  &lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has  left the chat.&lt;/i&gt;&lt;/div&gt;(display: &quot;Tuesday&quot;)
+		  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		  ]
+		  (stop:)
+	  ]
 	]&lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
@@ -655,7 +675,7 @@ p {
 ]
 (live:3.5s)[
 &lt;div class=&quot;sender-name big-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
-&lt;div class=&quot;embedded-image tiny-negative-margin&quot;&gt;&gt;&lt;i&gt;Screen Shot 2019-10-04 at 1.30.50 PM&lt;/i&gt;&lt;img src=&quot;https://i.imgur.com/BOcoO9K.png&quot; alt=&quot;screenshot of chat saying &#39;National Popular Vote (NPV) : you know RC, i like you. youre my favorite voting system.&#39;&quot; width=&quot;100%&quot;/&gt;&lt;/div&gt;
+&lt;div class=&quot;embedded-image tiny-negative-margin&quot;&gt;&gt;&lt;i&gt;Screen Shot 2019-10-04 at 1.30.50 PM&lt;/i&gt;&lt;img src=&quot;https://i.imgur.com/9cKg3B5.png&quot; alt=&quot;screenshot of chat saying &#39;National Popular Vote (NPV) : you know RC, i like you. youre my favorite voting system.&#39;&quot; width=&quot;100%&quot;/&gt;&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
@@ -711,26 +731,57 @@ p {
 	  (stop:)
 	  ]
 }]</tw-passagedata><tw-passagedata pid="16" name="NPV / Ranked Choice" tags="" position="805,290" size="100,100">&lt;div class=&quot;sender-name&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;you know RC&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;i like you&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;youre my favorite voting system&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;you know RC&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;i like you&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;youre my favorite voting system&lt;/div&gt;
 &lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;
-&lt;div class=&quot;received-text&quot;&gt;aw shucks thanks&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Story Time" tags="" position="1103,581" size="100,100">&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
-&lt;div class=&quot;received-text small-negative-margin&quot;&gt;as i was saying&lt;/div&gt;
-&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;Uncle Sam overreacts to everything&lt;/div&gt;
-&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;I mean, you all saw how he &lt;i&gt;snapped&lt;/i&gt; at me when i chose popeyes yesterday&lt;/div&gt;
-&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;and there i was, stressed out about being the deciding factor to the tie&lt;/div&gt;
-&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i mean i may have chosen it because he was putting so much pressure on me to choose kfc 😏&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Approval Vote&lt;/div&gt;
-&lt;div class=&quot;received-text small-negative-margin&quot;&gt;the salt is real&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
-&lt;div class=&quot;received-text small-negative-margin&quot;&gt;in your emotions as well in as the fried chicken&lt;/div&gt;
+&lt;div class=&quot;received-text&quot;&gt;aw shucks thanks&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Story Time" tags="" position="1103,581" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;as i was saying&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:2.25s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;Uncle Sam overreacts to everything&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:4s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;I mean, you all saw how he &lt;i&gt;&lt;b&gt;snapped&lt;/b&gt;&lt;/i&gt; at me when i chose popeyes yesterday&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:5.75s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;and there i was, stressed out about being the deciding factor to the tie&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:7.5s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;i mean i may have chosen it because he was putting so much pressure on me to choose kfc 😏&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:9s)[
+&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;Approval Vote&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;the salt is real&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:10s)[
+&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
+&lt;div class=&quot;received-text small-negative-margin&quot;&gt;in your emotions as well in as the fried chicken&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:11s)[
+&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;LMAO&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
 |links&gt;[{
-
-	  &lt;div class=&quot;text-entry-box small-negative-margin&quot;&gt;
+(live:11.5s)[
+	  &lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;no one deserves that kind of pressure&quot;)[
 			  (replace: ?links)[]
 				(append: ?endless)[
@@ -748,26 +799,67 @@ p {
 			]
 		  ]&lt;/div&gt;
 	  &lt;/div&gt;
-	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
-}]</tw-passagedata><tw-passagedata pid="18" name="Deciding Factor Educational Side Note" tags="" position="1102,728" size="100,100">&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Fact-Checker Bot&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="18" name="Deciding Factor Educational Side Note" tags="" position="1102,728" size="100,100">(live:1s)[
+&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Fact-Checker Bot&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;🤔 Metaphor Detected 🤔 Metaphor Detected 🤔&lt;/div&gt;
-&lt;div class=&quot;educational-side-note small-negative-margin&quot;&gt;Just like NPV&#39;s Popeye&#39;s/KFC vote, the vote of a citizen in some states (&quot;swing states&quot;) can swing the election more than the vote of a citizen in another. In fact, most democratic candidates consider two-thirds of the states to be “spectators” – that is to say, have such little voting power that they’re not worth campaigning in. This is antithetical to the ideal of a completely equal democracy.&lt;br&gt;&lt;a href=&quot;https://youtu.be/7wC42HgLA4k&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Source 1&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://inthesetimes.com/article/3457/dropping_out_of_electoral_college&quot;&gt;&lt;i&gt;Source 2&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Approval Vote&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:2s)[
+&lt;div class=&quot;educational-side-note almostbig-negative-margin&quot;&gt;Just like NPV&#39;s Popeye&#39;s/KFC vote, the vote of a citizen in some states (&quot;swing states&quot;) can swing the election more than the vote of a citizen in another. In fact, most democratic candidates consider two-thirds of the states to be “spectators” – that is to say, have such little voting power that they’re not worth campaigning in. This is antithetical to the ideal of a completely equal democracy.&lt;br&gt;&lt;a href=&quot;https://youtu.be/7wC42HgLA4k&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Source 1&lt;/i&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://inthesetimes.com/article/3457/dropping_out_of_electoral_college&quot;&gt;&lt;i&gt;Source 2&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+(stop:)
+]
+(live:10s)[
+&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;Approval Vote&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;on that note&lt;/div&gt;
-&lt;div class=&quot;embedded-image small-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/uUwfZch.png&quot; width:&quot;100%&quot; /&gt;&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:11.75s)[
+&lt;div class=&quot;embedded-image big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/uUwfZch.png&quot; width=&quot;100%&quot; /&gt;&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:13s)[
+&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;cya&lt;/div&gt;
-&lt;div class=&quot;enter-leave-chat&quot;&gt;Approval Vote has left the chat.&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:14s)[
+&lt;div class=&quot;enter-leave-chat big-negative-margin&quot;&gt;Approval Vote has left the chat.&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:15.75s)[
+&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;yeah sam can be a dick like that sometimes&lt;/div&gt;
-&lt;div class=&quot;received-text small-negative-margin&quot;&gt;you gonna tell him?&lt;/div&gt;
-&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:17.5s)[
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;you gonna tell him?&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:19.25s)[
+&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;idk&lt;/div&gt;
-&lt;div class=&quot;received-text small-negative-margin&quot;&gt;wath do u think&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
+(live:21s)[
+&lt;div class=&quot;received-text bigger-negative-margin&quot;&gt;wath do u think&lt;/div&gt;
+&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+(stop:)
+]
 
 |links&gt;[{
-
-	  &lt;div class=&quot;text-entry-box small-negative-margin&quot;&gt;
+(live:21.5s)[
+	  &lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;he needs to know&quot;)[
 			  (replace: ?links)[]
 				(append: ?endless)[
@@ -788,6 +880,8 @@ p {
 		  ]&lt;/div&gt;
 	  &lt;/div&gt;
 	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	  (stop:)
+	  ]
 }]</tw-passagedata><tw-passagedata pid="19" name="He Needs To Know" tags="" position="996,865" size="100,100">&lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;Ranked Choice Vote&lt;/div&gt;
 &lt;div class=&quot;received-text small-negative-margin&quot;&gt;yeah&lt;/div&gt;
 &lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;National Popular Vote (NPV)&lt;/div&gt;
