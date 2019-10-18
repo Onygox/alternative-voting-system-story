@@ -38,7 +38,7 @@ p {
 .sender-name {
 	color: black;
 	text-align: left;
-  	font-size: 16px;
+  	font-size: 18px;
   	/*margin: 12px;*/
   	font-weight: 800;
 }
@@ -147,12 +147,16 @@ p {
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
+
 
 
 
@@ -170,24 +174,27 @@ p {
 	(stop:)
 	]
 	(live: 1.5s)[
-		(append: ?endless)[&lt;div class=&quot;sender-name &quot; style=&quot;margin-top:-200px;&quot;&gt;Uncle Sam&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text small-negative-margin&quot;&gt;hey&lt;/div&gt;]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-200px;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;&lt;/div&gt;]
 		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 		(stop:)
 	]
 ]
 |links&gt;[{
 (live: 1.5s) [
-	  &lt;div class=&quot;text-entry-box&quot;&gt;
-		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;sup&quot;)[
-			  (replace: ?links)[]
-				(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text small-negative-margin&quot;&gt;sup&lt;/div&gt;
+	  &lt;div class=&quot;text-entry-box&quot;&gt;&lt;div class=&quot;text-entry-choice&quot;&gt;
+	  (link: &quot;sup&quot;)[
+			(replace: ?links)[]
+				(append: ?endless)[
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;sup&lt;/div&gt;
 				(display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
 		  &lt;br&gt;
 		  &lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;what?&quot;)[
 			  (replace: ?links)[]
-			  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;what?&lt;/div&gt;
+			  (append: ?endless)[
+			  &lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;what?&lt;/div&gt;
 			  (display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
@@ -1462,16 +1469,16 @@ links [
 }]</tw-passagedata><tw-passagedata pid="31" name="Tuesday" tags="" position="1146,156" size="100,100">&lt;div class=&quot;day-name&quot;&gt;Tuesday&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 
-National Popular Vote Introduction</tw-passagedata><tw-passagedata pid="32" name="Friday" tags="" position="2805,148" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Sunday" tags="" position="3370,144" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468.3333333333335,281.66666666666663" size="100,100">links [
+National Popular Vote Introduction</tw-passagedata><tw-passagedata pid="32" name="Friday" tags="" position="2805,148" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Sunday" tags="" position="3370,144" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468,281" size="100,100">links [
 second, B (append: endless) [Bananagrams is second. (live:1.5s)[and third is Codenames.(stop:)(display:Finished Voting)]]
 second, C (append: endless) [Codenames is second. (live:1.5s)[and third is Bananagrams.(stop:)(display:Finished Voting)]]
-]</tw-passagedata><tw-passagedata pid="35" name="Bananagrams First" tags="" position="1610.0000000000002,281.66666666666663" size="100,100">links [
+]</tw-passagedata><tw-passagedata pid="35" name="Bananagrams First" tags="" position="1610,281" size="100,100">links [
 second, EK (append: endless) [Exploding Kittens is second. (live:1.5s)[and third is Codenames.(stop:)(display:Finished Voting)]]
 second, C (append: endless) [Codenames is second. (live:1.5s)[and third is Exploding Kittens.(stop:)(display:Finished Voting)]]
-]</tw-passagedata><tw-passagedata pid="36" name="Codenames First" tags="" position="1748.3333333333335,281.6666666666667" size="100,100">links [
+]</tw-passagedata><tw-passagedata pid="36" name="Codenames First" tags="" position="1748,281" size="100,100">links [
 second, B (append: endless) [Bananagrams is second. (live:1.5s)[and third is Exploding Kittens.(stop:)(display:Finished Voting)]]
 second, EK (append: endless) [Exploding Kittens is second. (live:1.5s)[and third is Bananagrams.(stop:)(display:Finished Voting)]]
-]</tw-passagedata><tw-passagedata pid="37" name="Finished Voting" tags="" position="1605,426.6666666666667" size="100,100">RCV:
+]</tw-passagedata><tw-passagedata pid="37" name="Finished Voting" tags="" position="1605,426" size="100,100">RCV:
 sweet, i&#39;ll compare that to how uncle sam rated them
 speaking of sam,
 RCV &lt;whispered to you&gt; (only you can see this correspondence)
@@ -1483,14 +1490,14 @@ and THEN the next game he rescinded that &quot;rule&quot; for his OWN benefit
 links [
 draw 2s cant be stacked(append: endless) [he was right the first time though, draw 2s cant be stacked(display:Draw 2s Cant Be Stacked)]
 draw 2s can be stacked(append: endless) [you were right the first time, draw 2s can be stacked(display:Draw 2s Can Be Stacked)]
-]</tw-passagedata><tw-passagedata pid="38" name="Draw 2s Can Be Stacked" tags="" position="1703.3333333333335,566.6666666666666" size="100,100">RCV:
+]</tw-passagedata><tw-passagedata pid="38" name="Draw 2s Can Be Stacked" tags="" position="1703,566" size="100,100">RCV:
 thank you for taking my stance
 but thats not the issue here
-(display:Spoilsport)</tw-passagedata><tw-passagedata pid="39" name="Draw 2s Cant Be Stacked" tags="" position="1498.3333333333335,568.3333333333333" size="100,100">RCV:
+(display:Spoilsport)</tw-passagedata><tw-passagedata pid="39" name="Draw 2s Cant Be Stacked" tags="" position="1498,568" size="100,100">RCV:
 well fine
 take his side this time
 but thats not the first time uncle sam rustled my jimmies
-(display:Spoilsport)</tw-passagedata><tw-passagedata pid="40" name="Spoilsport" tags="" position="1601.6666666666667,705" size="100,100">he always alters the rules to his advantage
+(display:Spoilsport)</tw-passagedata><tw-passagedata pid="40" name="Spoilsport" tags="" position="1601,705" size="100,100">he always alters the rules to his advantage
 havent you notice
 like last week in catan
 he went back and forth on whether or not u discard on a 7 when u have 7 cards in ur hand, or when u have MORE than 7
@@ -1503,7 +1510,7 @@ that way whenever i make a rule no one can question it
 Paul Ryan:
 oh so its like when the dems own the house
 they keep the rulebook away from the GOP
-(display:Uncle Sam Enters The Chat)</tw-passagedata><tw-passagedata pid="41" name="Uncle Sam Enters The Chat" tags="" position="1600.0000000000002,835" size="100,100">&lt;i&gt;Uncle Sam entered the chat.&lt;/i&gt;
+(display:Uncle Sam Enters The Chat)</tw-passagedata><tw-passagedata pid="41" name="Uncle Sam Enters The Chat" tags="" position="1600,835" size="100,100">&lt;i&gt;Uncle Sam entered the chat.&lt;/i&gt;
 US:
 hey broskis
 RCV: (whisper)
@@ -1524,15 +1531,15 @@ codenames was my first choice (display:Codenames Is Good)
 i picked it second (display:Codenames Is Bad)
 codenames was my last choice (display:Codenames Is Bad)
 
-]</tw-passagedata><tw-passagedata pid="42" name="Codenames Is Good" tags="" position="1456.6666666666667,965.0000000000001" size="100,100">US:
+]</tw-passagedata><tw-passagedata pid="42" name="Codenames Is Good" tags="" position="1456,965" size="100,100">US:
 good
 its the obvious best choice
 right rcv?
-(display: Spoilsport 2)</tw-passagedata><tw-passagedata pid="43" name="Codenames Is Bad" tags="" position="1735.0000000000002,973.3333333333334" size="100,100">US:
+(display: Spoilsport 2)</tw-passagedata><tw-passagedata pid="43" name="Codenames Is Bad" tags="" position="1735,973" size="100,100">US:
 codenames was the obvious best choice
 im sure rcv can pop it up one or two spaces on ur list
 cant u rcv
-(display: Spoilsport 2)</tw-passagedata><tw-passagedata pid="44" name="Spoilsport 2" tags="" position="1593.3333333333335,1093.3333333333335" size="100,100">RCV: (whisper)
+(display: Spoilsport 2)</tw-passagedata><tw-passagedata pid="44" name="Spoilsport 2" tags="" position="1593,1093" size="100,100">RCV: (whisper)
 cant believe hes STILL bragging abt uno
 oh yeah and even the week before catan
 NPV and i were playing monopoly with him
@@ -1555,7 +1562,7 @@ links[
 yes we were actually(display:Yes Gossiping)
 we would never(display:No Gossiping)
 
-]</tw-passagedata><tw-passagedata pid="45" name="Yes Gossiping" tags="" position="1451.6666666666667,1228.3333333333335" size="100,100">US:
+]</tw-passagedata><tw-passagedata pid="45" name="Yes Gossiping" tags="" position="1451,1228" size="100,100">US:
 ooh, who about?
 whats the tea
 RCV:
@@ -1570,14 +1577,14 @@ for refusing to play board games with us anymore
 US:
 yeah bro i agree
 games are more fun with more people
-&#39;cuz then i get to WIN more</tw-passagedata><tw-passagedata pid="46" name="No Gossiping" tags="" position="1726.6666666666665,1221.666666666667" size="100,100">RCV:
+&#39;cuz then i get to WIN more</tw-passagedata><tw-passagedata pid="46" name="No Gossiping" tags="" position="1726,1221" size="100,100">RCV:
 nah i was in the middle of a game
 u have my full attention
 US:
 ok...
 RCV: (whisper)
 so after that NPV wont play board games with us
-or at least, HIM</tw-passagedata><tw-passagedata pid="47" name="Change The Vote" tags="" position="1588.3333333333335,1363.3333333333335" size="100,100">US:
+or at least, HIM</tw-passagedata><tw-passagedata pid="47" name="Change The Vote" tags="" position="1588,1363" size="100,100">US:
 so as i was saying
 rcv, pop codenames up in the ranks of your choices
 i may even give u some reward for doing so
@@ -1601,16 +1608,16 @@ even when rcv is trying to host a vote with even chances(display:You Always Chea
 idk they&#39;re probably upset about their game
 you have nothing to do with it(display:You Dont Always Cheat)
 
-]</tw-passagedata><tw-passagedata pid="48" name="You Always Cheat" tags="" position="1448.3333333333335,1506.6666666666667" size="100,100">US:
+]</tw-passagedata><tw-passagedata pid="48" name="You Always Cheat" tags="" position="1448,1506" size="100,100">US:
 i object
 cheating is not normally how i achieve greatness
 i dont even bribe that often
-(display:Bribe Fact-Checker)</tw-passagedata><tw-passagedata pid="49" name="You Dont Always Cheat" tags="" position="1715,1505.0000000000002" size="100,100">US:
+(display:Bribe Fact-Checker)</tw-passagedata><tw-passagedata pid="49" name="You Dont Always Cheat" tags="" position="1715,1505" size="100,100">US:
 you sure?
 i mean maybe its because i kinda bribed them
 its kinda unusual for me
 might have spooked them
-(display:Bribe Fact-Checker)</tw-passagedata><tw-passagedata pid="50" name="Bribe Fact-Checker" tags="" position="1580.0000000000002,1641.6666666666667" size="100,100">Fact-Checker Bot:
+(display:Bribe Fact-Checker)</tw-passagedata><tw-passagedata pid="50" name="Bribe Fact-Checker" tags="" position="1580,1641" size="100,100">Fact-Checker Bot:
 Bullshit Detected!
 
 timestamp: 04-02-2014:
@@ -1625,4 +1632,38 @@ i need a break
 
 links[
 log off (live:.5s)[(display: Thursday)(stop:)]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="51" name="Monday Image Test" tags="" position="326.6666666666667,160" size="100,100">|endless&gt;[
+	&lt;div class=&quot;day-name&quot;&gt;Monday&lt;/div&gt;
+	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
+	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	(live: .75s)[
+	&lt;div class=&quot;enter-leave-chat medium-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam has joined the chat.&lt;/i&gt;&lt;/div&gt;
+	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	(stop:)
+	]
+	(live: 1.5s)[
+		(append: ?endless)[&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-200px;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot;&gt;Uncle Sam&lt;br&gt;&lt;div class=&quot;received-text small-negative-margin&quot;&gt;hey&lt;/div&gt;&lt;/div&gt;]
+		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		(stop:)
+	]
+]
+|links&gt;[{
+(live: 1.5s) [
+	  &lt;div class=&quot;text-entry-box&quot;&gt;
+		  &lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;sup&quot;)[
+			  (replace: ?links)[]
+				(append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text small-negative-margin&quot;&gt;sup&lt;/div&gt;
+				(display: &quot;First Response&quot;)
+			]
+		  ]&lt;/div&gt;
+		  &lt;br&gt;
+		  &lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;what?&quot;)[
+			  (replace: ?links)[]
+			  (append: ?endless)[&lt;div class=&quot;my-name&quot;&gt;Me&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;sent-text tiny-negative-margin&quot;&gt;what?&lt;/div&gt;
+			  (display: &quot;First Response&quot;)
+			]
+		  ]&lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+  ]
+}]</tw-passagedata></tw-storydata>
