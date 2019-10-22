@@ -151,6 +151,7 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
@@ -168,19 +169,32 @@ p {
 
 
 
+
 </script><tw-passagedata pid="1" name="Monday" tags="" position="497,161" size="100,100">|endless&gt;[
 	&lt;div class=&quot;day-name&quot;&gt;Monday&lt;/div&gt;
 	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
-	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	(live: .75s)[
 	&lt;div class=&quot;enter-leave-chat medium-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam has joined the chat.&lt;/i&gt;&lt;/div&gt;
-	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	(stop:)
 	]
 	(live: 1.5s)[
 		(append: ?endless)[
 		&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-250px;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;&lt;/div&gt;]
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 		(stop:)
 	]
 ]
@@ -191,6 +205,11 @@ p {
 			(replace: ?links)[]
 				(append: ?endless)[
 				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;sup&lt;/div&gt;
+				&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 				(display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
@@ -199,26 +218,48 @@ p {
 			  (replace: ?links)[]
 			  (append: ?endless)[
 			  &lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;what?&lt;/div&gt;
+			  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 			  (display: &quot;First Response&quot;)
 			]
 		  ]&lt;/div&gt;
 	  &lt;/div&gt;
-	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
   ]
 }]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">(live:1s)[
-	  &lt;div class=&quot;sender-name tiny-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;who are you voting for&lt;/div&gt;
-	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	  (stop:)
 ]
 (live:2s)[
 	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;whats his name&lt;/div&gt;
-	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	(stop:)
 ]
 (live:3s)[
 	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;sanders?&lt;/div&gt;
-	  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	(stop:)
 ]
 |links&gt;[{
@@ -226,24 +267,50 @@ p {
   &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;yeah&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yeah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yeah&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;Transparency is Key&quot;)]
 		]&lt;/div&gt;&lt;br&gt;
 	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;nah&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;nah&lt;/div&gt;(display:&quot;Transparency is Key&quot;)]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;nah&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;Transparency is Key&quot;)]
 		]&lt;/div&gt;&lt;br&gt;
 	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;i dont need to tell you&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i dont need to tell you&lt;/div&gt;(display:&quot;Hidden Information&quot;)]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i dont need to tell you&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;Hidden Information&quot;)]
 		]&lt;/div&gt;
   &lt;/div&gt;
-  &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
   (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="3" name="Transparency is Key" tags="" position="403,436" size="100,100">(live:1s) [
-	&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 	&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;oh?&lt;/div&gt;
-	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -253,21 +320,32 @@ p {
 		(replace: ?links)[]
 		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;how about you&lt;/div&gt;(display: &quot;Second Response&quot;)]
 	]
-	&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="4" name="Hidden Information" tags="" position="600,437" size="100,100">(live:1s)[
-&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;good answer&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;Big Datas always listening&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -277,30 +355,57 @@ p {
 		(replace: ?links)[]
 		(append: ?endless)[
 			&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;why are you so paranoid?&lt;/div&gt;&lt;br&gt;
-			&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+			&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 			(live:1s)[
-			&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;weve got nothing to hide&lt;/div&gt;(display: &quot;Big Data&quot;)
-			&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+			&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;weve got nothing to hide&lt;/div&gt;
+			&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display: &quot;Big Data&quot;)
 			(stop:)
 			]
 		]
 	]&lt;/div&gt;
 &lt;/div&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+(stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="5" name="Second Response" tags="" position="402,578" size="100,100">(live:1s)[
-&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+&lt;div class=&quot;sender-name  medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;well,&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;i try to be as neutral as possible&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;so i cant say for sure until near the end&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -315,22 +420,38 @@ p {
 		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;as long as you get your vote in the ballot&lt;/div&gt;(display: &quot;A Question&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="6" name="A Question" tags="" position="504,719" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;anyway&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;come with me to the polling booth this Sunday&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;it could be a date&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -341,12 +462,20 @@ p {
 		(append: ?endless)[(display: &quot;A Pause&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
-}]</tw-passagedata><tw-passagedata pid="7" name="Big Data" tags="" position="600,580" size="100,100">(live:1s)[&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+}]</tw-passagedata><tw-passagedata pid="7" name="Big Data" tags="" position="600,580" size="100,100">(live:1s)[&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;speak for yourself&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 
@@ -356,7 +485,7 @@ p {
 
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;whatever&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
+		(append: ?endless)[&lt;div class=&quot;sender-name bigger-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;whatever&lt;/div&gt;(display: &quot;A Question&quot;)]
 
 	]&lt;/div&gt;
 	
@@ -367,18 +496,30 @@ p {
 	]&lt;/div&gt;
 	
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 	
-}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="499.3333333333333,856" size="100,100">(live:2s)[
+}]</tw-passagedata><tw-passagedata pid="8" name="A Pause" tags="" position="499,856" size="100,100">(live:2s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;i can see you typing&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:3.5s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;why are you thinking so long?&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -389,18 +530,30 @@ p {
 		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;well, our dating history has been... complicated, to say the least&lt;/div&gt;(display: &quot;A Reason&quot;)]
 	]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="9" name="A Reason" tags="" position="498,998" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;oh come on, that was just a couple of times&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;not worth raising a fuss about&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -410,15 +563,27 @@ p {
 		(replace: ?links)[]
 		(append: ?endless)[
 		&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text small-negative-margin&quot;&gt;you flaked on me five times&lt;/div&gt;&lt;br&gt;
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 		(live:1s)[
 		&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;i gave you another chance&lt;/div&gt;&lt;br&gt;
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 		(stop:)
 		]
 		(live:2s)[
 		&lt;div class=&quot;received-text big-negative-margin&quot;&gt;FOUR times&lt;/div&gt;
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 		(stop:)
 		]
 		(live:3s)[
@@ -428,7 +593,11 @@ p {
 	]
 ]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="10" name="A Defense 1" tags="" position="399,1145" size="100,100">(live:1s)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;Uncle Sam&lt;/div&gt;
@@ -467,22 +636,38 @@ p {
 }]</tw-passagedata><tw-passagedata pid="11" name="Educational Side Note One" tags="" position="499,1277" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;dont listen to the bots on this server&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text big-negative-margin&quot;&gt;theyre a joke&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;div class=&quot;received-text big-negative-margin&quot;&gt;theyre trash&lt;/div&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:3s)[
 &lt;div class=&quot;received-text big-negative-margin&quot;&gt;see you there at 12.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:4s)[
 &lt;div class=&quot;enter-leave-chat big-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam left the chat.&lt;/i&gt;&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -501,7 +686,11 @@ p {
 	  ]
 	]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="12" name="Thursday" tags="" position="2202,164" size="100,100">
@@ -1290,41 +1479,77 @@ links [
 (link:&quot;first, Codenames&quot;)[ (display:&quot;Codenames First&quot;)]
 ]</tw-passagedata><tw-passagedata pid="29" name="A Defense 2" tags="" position="555,1146" size="100,100">(live:1s)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;three of those times werent my fault&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:2s)[
 &lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;my bros pranked me&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:3.5s)[
 &lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/wB3KYsC.png&quot; width=&quot;60px&quot; /&gt;Fact-Checker Bot&lt;/div&gt;&lt;div class=&quot;fact-checker-bot&quot;&gt;🚨 Bullshit Detected 🚨 Bullshit Detected 🚨 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:4.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;timestamp: 12-02-1824&lt;/i&gt;&lt;br&gt;Uncle Sam backhanded Andrew Jackson in favor of the undeserving John Quincy Adams.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:5.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;timestamp: 11-07-1876&lt;/i&gt;&lt;br&gt;In a stunning upset, Uncle Sam forced Samuel Tilden to yield to Rutherford B. Hayes.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:6.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;timestamp: 11-06-1888&lt;/i&gt;&lt;br&gt;Uncle Sam threw Benjamin Harrison under the bus in order to elect Grover Cleveland.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:7.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;timestamp: 11-07-2000&lt;/i&gt;&lt;br&gt;After a month of legal battles, Al Gore fell to George W. Bush due to Uncle Sam&#39;s meddling.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:8.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;timestamp: 11-08-2016&lt;/i&gt;&lt;br&gt;Projected winner Hillary Clinton could do nothing against the combined efforts of Uncle Sam and the president-elect Donald Trump.&lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 (live:9.5s)[&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;&lt;i&gt;&lt;a href=&quot;https://www.archives.gov/federal-register/electoral-college/historical.html&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;&lt;/i&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 |links&gt;[{
@@ -1333,15 +1558,28 @@ links [
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;im not giving you another chance&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;im not giving you another chance&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)]
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 	]&lt;/div&gt;
 	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;alright ill consider it&quot;)[
 		(replace: ?links)[]
 		(append: ?endless)[&lt;div class=&quot;sender-name almostbig-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;alright ill consider it&lt;/div&gt;(display: &quot;Educational Side Note One&quot;)
-		&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	]
 	]&lt;/div&gt;
 &lt;/div&gt;
-&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
 (stop:)
 ]
 }]</tw-passagedata><tw-passagedata pid="30" name="Deciding Factor Educational Side Note 2" tags="" position="2298,723" size="100,100">(live:1s)[
