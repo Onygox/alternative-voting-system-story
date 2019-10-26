@@ -39,39 +39,16 @@ p {
 	color: black;
 	text-align: left;
   	font-size: 18px;
-  	/*margin: 12px;*/
-  	font-weight: 800;
-}
-
-.my-name {
-  	/*margin-top: 12px;*/
-	color: black;
-	text-align: right;
-  	font-size: 16px;
   	font-weight: 800;
 }
 
 .received-text {
-	color: #595959;
-  	/*font-weight: 700;*/
+	color: #333333;
+  	font-weight: 450;
 	text-align: left;
 	width: 620px;
 	border-radius: 12px;
 	padding: 12px;
-	/*background-color: lightgreen;
-	transition-duration: 1s;*/
-  	margin: -6px;
-}
-
-.sent-text {
-	color: #595959;
-  	/*font-weight: 700;*/
-  	text-align: right;
-	width: 620px;
-  	border-radius: 12px;
-	padding: 12px;
-	/*background-color: lightblue;
-	transition-duration: 1s;*/
   	margin: -6px;
 }
 
@@ -90,14 +67,6 @@ p {
   	margin: 6px;
 }
 
-.educational-side-note {
-	background-color: pink;
-  	color: black;
-  	padding: 6px;
-  	margin-top: 48px;
-  	text-align: center;
-}
-
 .fact-checker-bot {
 	color: red;
 	text-align: left;
@@ -112,6 +81,15 @@ p {
   	color: #808080;
   	margin: -6px;
   	font-style: italic;
+}
+
+.is-typing {
+  text-align: left;
+  color: #808080;
+}
+
+.biggest-negative-margin {
+ margin-top: -196px;
 }
 
 .bigger-negative-margin {
@@ -153,6 +131,7 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
@@ -172,7 +151,8 @@ p {
 
 
 
-</script><tw-passagedata pid="1" name="Wednesday" tags="" position="497,161" size="100,100">|endless&gt;[
+
+</script><tw-passagedata pid="1" name="Wednesday" tags="" position="497,159.33333333333334" size="100,100">|endless&gt;[
 	&lt;div class=&quot;day-name&quot;&gt;Wednesday, October 28&lt;/div&gt;
 	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;
 	&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
@@ -190,9 +170,16 @@ p {
 	&lt;/script&gt;
 	(stop:)
 	]
+	(live:1s)[
+	|typing&gt;[
+	&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam is typing...&lt;/i&gt;&lt;/div&gt;
+	]
+	(stop:)
+	]
 	(live: 1.5s)[
+		(replace: ?typing)[]
 		(append: ?endless)[
-		&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-250px;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;&lt;/div&gt;]
+		&lt;div class=&quot;sender-name&quot; style=&quot;margin-top:-350px;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hey&lt;/div&gt;&lt;/div&gt;]
 		&lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -237,8 +224,15 @@ p {
 	&lt;/script&gt;
   (stop:)
   ]
-}]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">(live:1s)[
-	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+}]</tw-passagedata><tw-passagedata pid="2" name="First Response" tags="" position="500,298" size="100,100">(live:.3s)[
+	|typing&gt;[
+	&lt;div class=&quot;is-typing almostbig-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam is typing...&lt;/i&gt;&lt;/div&gt;
+	]
+	(stop:)
+	]
+(live:1s)[
+	(replace: ?typing)[]
+	  &lt;div class=&quot;sender-name biggest-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
 	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;who are you voting for&lt;/div&gt;
 	  &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
@@ -247,8 +241,15 @@ p {
 	&lt;/script&gt;
 	  (stop:)
 ]
+(live:1.2s)[
+|typing&gt;[
+	&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam is typing...&lt;/i&gt;&lt;/div&gt;
+	]
+	(stop:)
+	]
 (live:2s)[
-	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;whats his name&lt;/div&gt;
+(replace: ?typing)[]
+	  &lt;div class=&quot;received-text biggest-negative-margin&quot;&gt;whats his name&lt;/div&gt;
 	  &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -256,8 +257,15 @@ p {
 	&lt;/script&gt;
 	(stop:)
 ]
+(live:2.2s)[
+|typing&gt;[
+	&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;&lt;i&gt;Uncle Sam is typing...&lt;/i&gt;&lt;/div&gt;
+	]
+	(stop:)
+	]
 (live:3s)[
-	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;sanders?&lt;/div&gt;
+(replace: ?typing)[]
+	  &lt;div class=&quot;received-text biggest-negative-margin&quot;&gt;sanders?&lt;/div&gt;
 	  &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -1456,7 +1464,7 @@ p {
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
 (stop:)
 ]
-}]</tw-passagedata><tw-passagedata pid="28" name="Friday" tags="" position="1607,144.33333333333334" size="100,100">(live:1.5s)[
+}]</tw-passagedata><tw-passagedata pid="28" name="Friday" tags="" position="1607,144" size="100,100">(live:1.5s)[
 &lt;div class=&quot;day-name&quot;&gt;Friday, October 30&lt;/div&gt;
 	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;
 &lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
