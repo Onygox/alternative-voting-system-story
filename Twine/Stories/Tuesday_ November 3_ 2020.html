@@ -1,4 +1,4 @@
-<tw-storydata name="Alternative Voting Systems" startnode="1" creator="Twine" creator-version="2.2.1" ifid="0DD06606-0487-4A66-8B74-4F2CABB4DDB5" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css family=Open-Sans:400,700,400italic,700italic);
+<tw-storydata name="Tuesday, November 3, 2020" startnode="33" creator="Twine" creator-version="2.2.1" ifid="1B8984D1-E208-4430-92AB-0FA6CDF4E342" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css family=Open-Sans:400,700,400italic,700italic);
  
 body, tw-story
 {
@@ -133,12 +133,14 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
 
 
 
@@ -1739,8 +1741,24 @@ im here for u
 
 cant talk now
 ]</tw-passagedata><tw-passagedata pid="32" name="Sunday" tags="" position="2758,156" size="100,100">&lt;div class=&quot;day-name&quot;&gt;Sunday, November 1&lt;/div&gt;
-	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Tuesday" tags="" position="3675,155" size="100,100">&lt;div class=&quot;day-name&quot;&gt;Tuesday, November 3&lt;/div&gt;
-&lt;div class=&quot;day-name&quot;&gt;Election Day 2020&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468,281" size="100,100">links [
+	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Tuesday" tags="" position="3675,155" size="100,100">|endless&gt;[
+&lt;div class=&quot;day-name&quot;&gt;Tuesday, November 3&lt;/div&gt;
+&lt;div class=&quot;day-name&quot;&gt;Election Day 2020&lt;/div&gt;
+&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+&lt;/script&gt;
+]
+
+|links&gt;[
+	(link: &quot;log in&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+			(display: &quot;End of Tuesday&quot;)
+		]
+	]
+]</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468,281" size="100,100">links [
 second, B (append: endless) [Bananagrams is second. (live:1.5s)[and third is Codenames.(stop:)(display:Finished Voting)]]
 second, C (append: endless) [Codenames is second. (live:1.5s)[and third is Bananagrams.(stop:)(display:Finished Voting)]]
 ]</tw-passagedata><tw-passagedata pid="35" name="Bananagrams First" tags="" position="1610,281" size="100,100">links [
@@ -2147,4 +2165,4 @@ log off
 The American Public has left the chat.
 (display:&quot;Friday&quot;)
 
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="74" name="End of Tuesday" tags="" position="3686.666666666667,575" size="100,100">&lt;div style=&quot;color:black;&quot;&gt;That&#39;s the end of the demo.&lt;/div&gt;</tw-passagedata></tw-storydata>
