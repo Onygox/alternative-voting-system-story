@@ -134,12 +134,14 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
 
 
 
@@ -1725,27 +1727,154 @@ links [
 	  (stop:)
 	  ]
 }]</tw-passagedata><tw-passagedata pid="31" name="Thursday" tags="" position="1146,156" size="100,100">|endless&gt;[
-&lt;div class=&quot;day-name&quot;&gt;Thursday, October 29&lt;/div&gt;
-&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;
-&lt;script&gt;
+	&lt;div class=&quot;day-name&quot;&gt;Thursday, October 29&lt;/div&gt;
+	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;
+	&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(live: .75s)[
+	  &lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has entered the chat.&lt;/i&gt;&lt;/div&gt;
+	  &lt;script&gt;
+		  if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			  window.scrollTo(0,document.body.scrollHeight);
+		  }
+	  &lt;/script&gt;
+	(stop:)
+	]
+(live: 1.25s)[
+	|typing&gt;[
+		&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;Approval Vote is typing...&lt;/div&gt;
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+	]
+]
+(live:2s)[
+(replace: ?typing)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;div class=&quot;received-text&quot;&gt;hihi&lt;/div&gt;&lt;/div&gt;
+		]
+		&lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
         window.scrollTo(0,document.body.scrollHeight);
     }
-&lt;/script&gt;
-
-&lt;i&gt;The American Public has entered the chat.&lt;/i&gt;
-
-AV:
-hihi
-im so glad ur here
-i been lurking in this chatroom for like hours
-i need SOMEONE to talk to
+	&lt;/script&gt;
+(stop:)
+]
+(live: 2.25s)[
+	|typing&gt;[
+		&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;Approval Vote is typing...&lt;/div&gt;
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+	]
+]
+(live:3.5s)[
+	(replace: ?typing)[]
+		(append: ?endless)[
+		&lt;div class=&quot;received-text bigger-negative-margin&quot;&gt;im so glad ur here&lt;/div&gt;&lt;/div&gt;
+		]
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+]
+(live: 3.75s)[
+	|typing&gt;[
+		&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;Approval Vote is typing...&lt;/div&gt;
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+	]
+]
+(live:5.25s)[
+	(replace: ?typing)[]
+		(append: ?endless)[
+		&lt;div class=&quot;received-text bigger-negative-margin&quot;&gt;i been lurking in this chatroom for like hours&lt;/div&gt;&lt;/div&gt;
+		]
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+]
+(live: 5.75s)[
+	|typing&gt;[
+		&lt;div class=&quot;is-typing bigger-negative-margin&quot;&gt;Approval Vote is typing...&lt;/div&gt;
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+	]
+]
+(live:7s)[
+	(replace: ?typing)[]
+		(append: ?endless)[
+		&lt;div class=&quot;received-text bigger-negative-margin&quot;&gt;i need SOMEONE to talk to&lt;/div&gt;&lt;/div&gt;
+		]
+		&lt;script&gt;
+		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	&lt;/script&gt;
+	(stop:)
+]
 ]
 
 |links&gt;[
-im here for u
-
-cant talk now
+  (live:7.25s)[
+  &lt;div class=&quot;text-entry-box&quot;&gt;&lt;div class=&quot;text-entry-choice&quot;&gt;
+		(link: &quot;im here for u&quot;)[
+		  (replace: ?links)[]
+				(append: ?endless)[
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;im here for u&lt;/div&gt;
+				&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+				(display: &quot;im here for u&quot;)
+			]
+		  ]
+		  &lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;
+		(link: &quot;cant talk now&quot;)[
+		  (replace: ?links)[]
+				(append: ?endless)[
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;cant talk now&lt;/div&gt;
+				&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+				(display: &quot;cant talk now&quot;)
+			]
+		  ]
+		  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+		  if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+			  window.scrollTo(0,document.body.scrollHeight);
+		  }
+	  &lt;/script&gt;
+  (stop:)
+  ]
 ]</tw-passagedata><tw-passagedata pid="32" name="Sunday" tags="" position="2758,156" size="100,100">&lt;div class=&quot;day-name&quot;&gt;Sunday, November 1&lt;/div&gt;
 	&lt;div class=&quot;day-name&quot;&gt;2020&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Tuesday" tags="" position="3675,155" size="100,100">&lt;div class=&quot;day-name&quot;&gt;Tuesday, November 3&lt;/div&gt;
 &lt;div class=&quot;day-name&quot;&gt;Election Day 2020&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468,281" size="100,100">links [
@@ -2155,4 +2284,4 @@ log off
 The American Public has left the chat.
 (display:&quot;End of Thursday&quot;)
 
-]</tw-passagedata><tw-passagedata pid="74" name="End of Thursday" tags="" position="918.3333333333333,1950" size="100,100">&lt;div style=&quot;color:black;&quot;&gt;That&#39;s the end of the demo.&lt;/div&gt;</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="74" name="End of Thursday" tags="" position="918,1950" size="100,100">&lt;div style=&quot;color:black;&quot;&gt;That&#39;s the end of the demo.&lt;/div&gt;</tw-passagedata></tw-storydata>
