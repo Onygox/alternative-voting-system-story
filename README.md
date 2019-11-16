@@ -1,4 +1,4 @@
-# Alternative Voting System Story
+# Change The Vote *(working title)*
 
 A project I am working on as my BFA Thesis.
 
