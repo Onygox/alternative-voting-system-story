@@ -4,7 +4,7 @@ A project I am working on as my BFA Thesis.
 
 It is meant to educate the masses about voting systems that can potentially replace the Electoral College. *(Because the Electoral College doesn't fulfill the needs of U.S. citizens to the same degree that other country's voting systems fulfill the needs of their respective citizens, which I plan to address in this project!)*
 
-Demo is available at https://onygox.github.io/alternative-voting-system-story/ and is constantly being updated.
+Demo is available at https://onygox.github.io/change-the-vote/ and is constantly being updated.
 
 # Preliminary Notes
 
