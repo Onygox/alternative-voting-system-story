@@ -143,12 +143,14 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
 
 
 
@@ -2047,7 +2049,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 	&lt;/script&gt;
 	(stop:)
 ]
-(live: 3s)[
+(live: 3.5s)[
 	&lt;div class=&quot;received-text almostbig-negative-margin&quot;&gt;just like the old days&lt;/div&gt;
 	&lt;script&gt;
 		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
@@ -2056,7 +2058,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 	&lt;/script&gt;
 	(stop:)
 ]
-(live: 4s)[
+(live: 5s)[
 (display:&quot;AV Rejection&quot;)
 (stop:)
 ]</tw-passagedata><tw-passagedata pid="53" name="cant talk now" tags="" position="1250,293" size="100,100">(live: .75s)[
@@ -2086,7 +2088,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 	&lt;/script&gt;
 (stop:)
 ]
-(live: 4.5s)[
+(live: 5s)[
 	&lt;div class=&quot;enter-leave-chat almostbig-negative-margin&quot;&gt;&lt;i&gt;Conversation Bot has left the chat.&lt;/i&gt;&lt;/div&gt;
 	&lt;script&gt;
 		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
@@ -2095,7 +2097,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 	&lt;/script&gt;
 	(stop:)
 ]
-(live: 5.75s)[
+(live: 6.5s)[
 	&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;received-text&quot;&gt;oh NO&lt;/div&gt;
 	&lt;script&gt;
 		if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-200) {
@@ -2106,7 +2108,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 ]
 
 |links&gt;[{
-(live: 6s)[
+(live: 7s)[
 &lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 		&lt;div class=&quot;text-entry-choice&quot;&gt;
 		(link: &quot;alright i can talk&quot;)[
@@ -2677,7 +2679,7 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 (stop:)
 ]
 (live:4s)[
-&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;do you approve?&lt;/div&gt;
+&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;between me and Uncle Sam, whose Insta accounts do you approve of?&lt;/div&gt;
 &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -2691,27 +2693,27 @@ log off (live:.5s)[(display: Saturday)(stop:)]
 (live:5s)[
 &lt;div class=&quot;text-entry-box medium-negative-margin&quot;&gt;
 		&lt;div class=&quot;text-entry-choice&quot;&gt;
-		(link: &quot;yes&quot;)[
+		(link: &quot;yours&quot;)[
 		(replace: ?links)[]
 				(append: ?endless)[
-				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yes&lt;/div&gt;
-			(display:&quot;4 5 Stars&quot;)
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yours&lt;/div&gt;
+			(display:&quot;yours&quot;)
 			]
 		]&lt;/div&gt;
 		&lt;div class=&quot;text-entry-choice&quot;&gt;
-		(link: &quot;no&quot;)[
+		(link: &quot;uncle sam&#39;s&quot;)[
 		(replace: ?links)[]
 				(append: ?endless)[
-				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;no&lt;/div&gt;
-			(display:&quot;1 2 Stars&quot;)
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;uncle sam&#39;s&lt;/div&gt;
+			(display:&quot;uncle sams&quot;)
 			]
 		]&lt;/div&gt;
 		&lt;div class=&quot;text-entry-choice&quot;&gt;
-		(link: &quot;i have no opinion&quot;)[
+		(link: &quot;both are pretty good&quot;)[
 		(replace: ?links)[]
 				(append: ?endless)[
-				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i have no opinion&lt;/div&gt;
-			(display:&quot;1 2 Stars&quot;)
+				&lt;div class=&quot;sender-name&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;both are pretty good&lt;/div&gt;
+			(display:&quot;both are pretty good&quot;)
 			]
 		]&lt;/div&gt;
 		&lt;div class=&quot;text-entry-choice&quot;&gt;
@@ -2941,7 +2943,7 @@ thats not a good metric either (display:&quot;not a good metric for measuring co
 	&lt;/script&gt;
 (stop:)
 ]
-}]</tw-passagedata><tw-passagedata pid="69" name="1 2 Stars" tags="" position="735,1342" size="100,100">(live:1s)[
+}]</tw-passagedata><tw-passagedata pid="69" name="uncle sams" tags="" position="735,1342" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name small-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;received-text&quot;&gt;ok then, id like to see u do better&lt;/div&gt;
 &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
@@ -2962,8 +2964,8 @@ thats not a good metric either (display:&quot;not a good metric for measuring co
 (live:3s)[
 (display:&quot;Date With AV&quot;)
 (stop:)
-]</tw-passagedata><tw-passagedata pid="70" name="3 Stars" tags="" position="918,1347" size="100,100">(live:1s)[
-&lt;div class=&quot;sender-name small-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;received-text&quot;&gt;i know im better than that&lt;/div&gt;
+]</tw-passagedata><tw-passagedata pid="70" name="both are pretty good" tags="" position="918,1347" size="100,100">(live:1s)[
+&lt;div class=&quot;sender-name small-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;received-text&quot;&gt;i know im better than him&lt;/div&gt;
 &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -2972,7 +2974,7 @@ thats not a good metric either (display:&quot;not a good metric for measuring co
 (stop:)
 ]
 (live:2s)[
-&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;how could i be 3 stars and still get 10K followers&lt;/div&gt;
+&lt;div class=&quot;received-text medium-negative-margin&quot;&gt;how could i be the same and still get 10K followers&lt;/div&gt;
 &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
         window.scrollTo(0,document.body.scrollHeight);
@@ -2992,7 +2994,7 @@ thats not a good metric either (display:&quot;not a good metric for measuring co
 (live:4s)[
 (display:&quot;Date With AV&quot;)
 (stop:)
-]</tw-passagedata><tw-passagedata pid="71" name="4 5 Stars" tags="" position="1081,1349" size="100,100">(live:1s)[
+]</tw-passagedata><tw-passagedata pid="71" name="yours" tags="" position="1081,1349" size="100,100">(live:1s)[
 &lt;div class=&quot;sender-name small-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/bSU76HA.png&quot; width=&quot;60px&quot; /&gt;Approval Vote&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;received-text&quot;&gt;i knew it&lt;/div&gt;
 &lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
