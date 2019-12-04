@@ -140,12 +140,14 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
 
 
 
@@ -2181,167 +2183,723 @@ log off
 The American Public has left the chat.
 (display:&quot;Friday&quot;)
 
-]</tw-passagedata><tw-passagedata pid="74" name="End of Monday" tags="" position="3239,1682.333333333333" size="100,100">&lt;div style=&quot;color:black;&quot;&gt;That&#39;s the end of the demo.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Log In Monday" tags="" position="3250,296" size="100,100">&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
+]</tw-passagedata><tw-passagedata pid="74" name="End of Monday" tags="" position="3239,1682" size="100,100">&lt;div style=&quot;color:black;&quot;&gt;That&#39;s the end of the demo.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Log In Monday" tags="" position="3250,296" size="100,100">&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public™ has joined the chat.&lt;/i&gt;&lt;/div&gt;
 	&lt;script&gt;
 	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
         window.scrollTo(0,document.body.scrollHeight);
     }
 	&lt;/script&gt;
 	
-US:
-hey dude
-we still on for tomorrow?
-
-links:
-(link:&quot;yeah&quot;)[(display:&quot;yes tomorrow&quot;)]
-(link:&quot;no&quot;)[(display: &quot;no tomorrow&quot;)]
-(link:&quot;i don&#39;t know&quot;)[(display:&quot;no tomorrow&quot;)]</tw-passagedata><tw-passagedata pid="76" name="yes tomorrow" tags="" position="3175,431" size="100,100">US:
-excellent
-lets go over the plan
-do u wanna get food before or after voting?
-
-links:
-before (display:&quot;food&quot;)
-after (display:&quot;food&quot;)</tw-passagedata><tw-passagedata pid="77" name="no tomorrow" tags="" position="3331,426" size="100,100">US:
-what
-you dont mean youre gonna ditch me?
-who else asked you
-
-links:
-Approval Vote (display:&quot;approval vote&quot;)
-Ranked Choice Vote (display:&quot;ranked choice vote&quot;)
-National Popular Vote (display:&quot;national popular vote&quot;)
-Anarchy (display:&quot;anarchy&quot;)
-no one (display:&quot;no one&quot;)</tw-passagedata><tw-passagedata pid="78" name="food" tags="" position="3060,631" size="100,100">US:
-cool we can stop at a deli
-
-(display:&quot;results&quot;)</tw-passagedata><tw-passagedata pid="79" name="approval vote" tags="" position="3400,560" size="100,100">US:
-damn approval vote
-youre gonna get exhausted from her
-shes so needy
-always seeking validation
-
-links:
-
-(link:&quot;i agree&quot;)[
-
-TAP:
-i agree
-
-US:
-good so were in agreement
-im the better choice
-see you tomorrow
-(display:&quot;results&quot;)
-
+(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;hey dude&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;we still on for tomorrow?&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+|links&gt;[{
+(live:3.5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;yeah&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yeah&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;yes tomorrow&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;no&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;no&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;no tomorrow&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;i dont know&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i dont know&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;no tomorrow&quot;)]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="76" name="yes tomorrow" tags="" position="3175,431" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;excellent&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;lets go over the plan&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:4.5s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;do u wanna get food before or after voting?&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+|links&gt;[{
+(live:5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;before&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;before&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;food&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;after&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;after&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;food&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;yes&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yes&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;ok smartypants&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	  ]
+	  (live:3s)[
+		(display:&quot;food&quot;)
+		(stop:)
+		]
+	]
+]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="77" name="no tomorrow" tags="" position="3331,426" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;what&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;you dont mean youre gonna ditch me?&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:4.5s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;who else asked you&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
 ]
 
-(link:&quot;oh and you dont?&quot;)[
-
-TAP:
-oh and you dont?
-
-US:
-whats that supposed to mean
-oh forget it
+|links&gt;[{
+(live:5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;Approval Vote&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;Approval Vote&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;approval vote&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;Ranked Choice Voting&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;Ranked Choice Voting&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;ranked choice voting&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;National Popular Vote&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;National Popular Vote&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;national popular vote&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;Anarchy&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;Anarchy&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;anarchy&quot;)]
+		]&lt;/div&gt;&lt;br&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;(link: &quot;no one&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;no one&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(display:&quot;no one&quot;)]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="78" name="food" tags="" position="3060,631" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;we can stop at a deli&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
 (display:&quot;results&quot;)
-
+(stop:)
+]</tw-passagedata><tw-passagedata pid="79" name="approval vote" tags="" position="3400,560" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;damn approval vote&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;youre gonna get exhausted from her&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:4.5s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;shes so needy&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:6s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;always seeking validation&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
 ]
 
-(link:&quot;i can handle her&quot;)[
-
-TAP:
-i can handle her
-
-US:
-fine
-just dont come crawling back to me when u bite the dust
-(display:&quot;results&quot;)
-
-]</tw-passagedata><tw-passagedata pid="80" name="ranked choice vote" tags="" position="3636,560" size="100,100">US:
-now im offended
-RCV is just too contradictory
-makes too many promises they cant keep
-
-links:
-
-(link:&quot;yeah&quot;)[
-
-TAP:
-yeah
-
-US:
-im surprised u agreed so quickly
-but ill go with it
-(display:&quot;results&quot;)
-
+|links&gt;[{
+(live:6.5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;youre right&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;youre right&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;good so were in agreement&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;im the better choice&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;see you tomorrow&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:6s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;oh and you arent?&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;oh and you arent?&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;whats that supposed to mean&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;oh forget it&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+		&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i can handle her&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i can handle her&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;fine&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;just dont come crawling back to me when u bite the dust&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="80" name="ranked choice voting" tags="" position="3636,560" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;now im offended&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;RCV is just too contradictory&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:4.5s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;makes too many promises they cant keep&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
 ]
 
-(link:&quot;what makes u any different?&quot;)[
-
-TAP:
-what makes u any different?
-
-US:
-wow i feel attacked
-damn savage
-(display:&quot;results&quot;)
-
+|links&gt;[{
+(live:5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;yeah i guess so&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;yeah i guess so&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;wow im surprised u agreed so quickly&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;but ill go with it&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;what makes u any different?&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;what makes u any different?&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;wow i feel attacked&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;damn savage&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;hm&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:6s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+		&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i can handle it&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i can handle it&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;are u sure about that&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;actually dont answer that i dont care&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
+]
+}]</tw-passagedata><tw-passagedata pid="81" name="national popular vote" tags="" position="3520,558" size="100,100">(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;ah yes NPV&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:3s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;he keeps up that facade of wanting whats best for you&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
+(live:4.5s)[
+	  &lt;div class=&quot;received-text big-negative-margin&quot;&gt;but youll find out soon how wrong that is&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
 ]
 
-(link:&quot;i can handle it&quot;)[
-
-TAP:
-i can handle it
-
-US:
-are u sure about that
-actually dont answer that i dont care
-(display:&quot;results&quot;)
-
-]</tw-passagedata><tw-passagedata pid="81" name="national popular vote" tags="" position="3520,558" size="100,100">US:
-ah yes NPV
-he keeps up that facade of wanting whats best for you
-but youll find out soon how wrong that is
-
-links:
-
-(link:&quot;youre right&quot;)[
-
-TAP:
-youre right
-
-US:
-i know i am
-now lets get rolling on that election day train
-(display:&quot;results&quot;)
-
+|links&gt;[{
+(live:5s)[
+  &lt;div id=&quot;bottom&quot; class=&quot;text-entry-box medium-negative-margin&quot;&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;youre right&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;youre right&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i know i am&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;now lets get rolling on that election day train&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;dont tell me you dont do the same thing&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;dont tell me you dont do the same thing&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;excuse me&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;you dont know what youre talking about&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;hm&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:6s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+		&lt;div class=&quot;text-entry-choice&quot;&gt;(link: &quot;i can handle him&quot;)[
+		(replace: ?links)[]
+		(append: ?endless)[
+		&lt;div class=&quot;sender-name big-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/Bzg6j34.png&quot; width=&quot;60px&quot; /&gt;The American Public™&lt;/div&gt;&lt;br&gt;&lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;i can handle him&lt;/div&gt;
+		&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	(live:1.5s)[
+	&lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;wow i can tell by your beaming confidence&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:3s)[
+	&lt;div class=&quot;received-text big-negative-margin&quot;&gt;fine then&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+	]
+	(live:4.5s)[
+	  (display:&quot;results&quot;)
+	  (stop:)
+	]
+	]
+		]&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+  (stop:)
 ]
-(link:&quot;dont tell me you dont do the same thing&quot;)[
-
-TAP:
-dont tell me you dont do the same thing
-
-US:
-excuse me
-you dont know what youre talking about
-hm
-(display:&quot;results&quot;)
-
-]
-
-]
-(link:&quot;i can handle him&quot;)[
-
-TAP:
-i can handle him
-
-US:
-wow i can tell by your beaming confidence
-fine then
-(display:&quot;results&quot;)
-
-]</tw-passagedata><tw-passagedata pid="82" name="anarchy" tags="" position="3465,685" size="100,100">US:
+}]</tw-passagedata><tw-passagedata pid="82" name="anarchy" tags="" position="3400,690" size="100,100">US:
 wtf
 how do you find her approachable
 she has no moral compass
@@ -2381,7 +2939,7 @@ US:
 fine
 (display:&quot;results&quot;)
 
-]</tw-passagedata><tw-passagedata pid="83" name="no one" tags="" position="3581,685" size="100,100">US:
+]</tw-passagedata><tw-passagedata pid="83" name="no one" tags="" position="3516,690" size="100,100">US:
 well then why cant u join me
 
 links:
@@ -2411,8 +2969,16 @@ thank god
 
 ]</tw-passagedata><tw-passagedata pid="84" name="results" tags="" position="3253,800" size="100,100">&lt;div class=&quot;enter-leave-chat&quot;&gt;National Popular Vote (NPV) has entered the chat.&lt;/div&gt;
 
-US
-wonder whos going to win the election
+(live:1.5s)[
+	  &lt;div class=&quot;sender-name medium-negative-margin&quot;&gt;&lt;img src=&quot;https://i.imgur.com/IXLqNoP.png&quot; width=&quot;60px&quot; /&gt;Uncle Sam&lt;/div&gt;
+	  &lt;div class=&quot;received-text tiny-negative-margin&quot;&gt;wonder whos going to win the election&lt;/div&gt;
+	  &lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-300) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+	&lt;/script&gt;
+	  (stop:)
+]
 
 NPV:
 heyyall
@@ -2522,7 +3088,7 @@ links:
 
 (link:&quot;something that puts the decision-making in the hands of someone else&quot;)[The American Public™: something that puts the decision-making in the hands of someone else(display:&quot;sub&quot;)]
 
-</tw-passagedata><tw-passagedata pid="86" name="sub" tags="" position="3402.6666666666665,1132.6666666666667" size="100,100">AV:
+</tw-passagedata><tw-passagedata pid="86" name="sub" tags="" position="3402,1132" size="100,100">AV:
 i know the perfect person for you
 US&#39;s your man
 
@@ -2585,7 +3151,7 @@ Anarchy:
 ive found it pretty impossible
 but then again, i havent really tried for that *specifically*
 
-(display:&quot;whats next&quot;)</tw-passagedata><tw-passagedata pid="91" name="whats next" tags="" position="3249,1265.0000000000002" size="100,100">NPV:
+(display:&quot;whats next&quot;)</tw-passagedata><tw-passagedata pid="91" name="whats next" tags="" position="3249,1265" size="100,100">NPV:
 geez i lost track of time
 good talk but i gtg
 cya
@@ -2634,7 +3200,7 @@ exciting
 TAP:
 saddening
 (display:&quot;saddening&quot;)
-]</tw-passagedata><tw-passagedata pid="92" name="stressful" tags="" position="3023.333333333334,1400" size="100,100">AV:
+]</tw-passagedata><tw-passagedata pid="92" name="stressful" tags="" position="3023,1400" size="100,100">AV:
 guess that makes three of us
 hopefully after we find out what happens tomorrow itll be better
 
@@ -2674,7 +3240,7 @@ i realize that
 AV:
 guess it just doesnt get to you in the same way as it does to me then
 
-]</tw-passagedata><tw-passagedata pid="94" name="exciting" tags="" position="3318.3333333333335,1403.3333333333335" size="100,100">AV:
+]</tw-passagedata><tw-passagedata pid="94" name="exciting" tags="" position="3318,1403" size="100,100">AV:
 that makes sense
 my stress is littered with excitement as well
 
@@ -2684,7 +3250,7 @@ anything can happen tomorrow
 
 AV:
 yeah
-no poll can tell the future for sure</tw-passagedata><tw-passagedata pid="95" name="saddening" tags="" position="3458.3333333333335,1401.666666666667" size="100,100">AV:
+no poll can tell the future for sure</tw-passagedata><tw-passagedata pid="95" name="saddening" tags="" position="3458,1401" size="100,100">AV:
 huh
 didnt expect that answer
 
@@ -2694,7 +3260,7 @@ thats what arises when u consider how many ppl cant or wont vote
 or just dont know what it really means to do so
 
 AV:
-truu</tw-passagedata><tw-passagedata pid="96" name="leave" tags="" position="3233.3333333333335,1553.3333333333335" size="100,100">anyway cheers im out for now
+truu</tw-passagedata><tw-passagedata pid="96" name="leave" tags="" position="3233,1553" size="100,100">anyway cheers im out for now
 
 RCV:
 until tomorrow
