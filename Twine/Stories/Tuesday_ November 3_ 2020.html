@@ -136,12 +136,14 @@ p {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function scrollToBottom() {
    window.scrollTo(0,document.body.scrollHeight);
 }
 
 // setInterval(scrollToBottom, 500); 
 // adjust the time limit based on the frequency log gets updated
+
 
 
 
@@ -198,7 +200,8 @@ p {
 ]
 |links&gt;[{
 (live: 1.5s) [
-	  &lt;div class=&quot;text-entry-box&quot;&gt;&lt;div class=&quot;text-entry-choice&quot;&gt;
+	  &lt;div class=&quot;text-entry-box&quot;&gt;
+	  &lt;div class=&quot;text-entry-choice&quot;&gt;
 	  (link: &quot;sup&quot;)[
 			(replace: ?links)[]
 				(append: ?endless)[
@@ -1753,60 +1756,49 @@ cant talk now
         window.scrollTo(0,document.body.scrollHeight);
     }
 &lt;/script&gt;
-(live:1.5s)[
-You pull into the polling booth driveway and weave your way through the countless other cars to find a spot.
-
-&lt;script&gt;
-	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
-        window.scrollTo(0,document.body.scrollHeight);
-    }
-&lt;/script&gt;
-(stop:)
-]
-(live:6s)[
-It is 11:50 AM, ten minutes before your &quot;date&quot;. You park and catch your breath before making a decision about who to go with to vote.
-
-&lt;script&gt;
-	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
-        window.scrollTo(0,document.body.scrollHeight);
-    }
-&lt;/script&gt;
+(live:1s)[
+&lt;div class=&quot;enter-leave-chat&quot;&gt;&lt;i&gt;The American Public has entered the chat.&lt;/i&gt;&lt;/div&gt;
 (stop:)
 ]
 ]
-
 |links&gt;[
-(live:10.5s)[
-	(link: &quot;Uncle Sam&quot;)[
+(live:1.5s)[
+&lt;div class=&quot;text-entry-box&quot;&gt;
+&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;
+	(link: &quot;Message Uncle Sam&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[
-			(display: &quot;Uncle Sam&quot;)
-		]
+		(append: ?endless)[(display: &quot;Uncle Sam&quot;)]
 	]
-	(link: &quot;Approval Vote&quot;)[
+	&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;
+	(link: &quot;Message Approval Vote&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[
-			(display: &quot;Approval Vote&quot;)
-		]
+		(append: ?endless)[(display: &quot;Approval Vote&quot;)]
 	]
-	(link: &quot;Ranked Choice Voting&quot;)[
+	&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;
+	(link: &quot;Message Ranked Choice Voting&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[
-			(display: &quot;Ranked Choice Voting&quot;)
-		]
+		(append: ?endless)[(display: &quot;Ranked Choice Voting&quot;)]
 	]
-	(link: &quot;National Popular Vote&quot;)[
+	&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;
+	(link: &quot;Message National Popular Vote&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[
-			(display: &quot;National Popular Vote&quot;)
-		]
+		(append: ?endless)[(display: &quot;National Popular Vote&quot;)]
 	]
-	(link: &quot;Anarchy&quot;)[
+	&lt;/div&gt;
+	&lt;div class=&quot;text-entry-choice tiny-negative-margin&quot;&gt;
+	(link: &quot;Message Anarchy&quot;)[
 		(replace: ?links)[]
-		(append: ?endless)[
-			(display: &quot;Anarchy&quot;)
-		]
+		(append: ?endless)[(display: &quot;Anarchy&quot;)]
 	]
+	&lt;/div&gt;
+	&lt;script&gt;
+	if((window.scrollY + window.innerHeight) &gt;= document.body.scrollHeight-100) {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+&lt;/script&gt;
 (stop:)
 ]
 ]</tw-passagedata><tw-passagedata pid="34" name="Exploding Kittens First" tags="" position="1468,281" size="100,100">links [
