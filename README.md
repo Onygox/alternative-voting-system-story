@@ -1,10 +1,12 @@
-# Change The Vote *(working title)*
+# Change The Vote
 
 A project I am working on as my BFA Thesis.
 
 It is meant to educate the masses about voting systems that can potentially replace the Electoral College. *(Because the Electoral College doesn't fulfill the needs of U.S. citizens to the same degree that other country's voting systems fulfill the needs of their respective citizens, which I plan to address in this project!)*
 
 Demo is available at https://onygox.github.io/change-the-vote/ and is constantly being updated.
+
+<img src=https://parsons.edu/dt/wp-content/uploads/sites/14/2020/05/Change-The-Vote-Trailer.gif>
 
 # Preliminary Notes
 
