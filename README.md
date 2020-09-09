@@ -6,7 +6,7 @@ It is meant to educate the masses about voting systems that can potentially repl
 
 Demo is available at https://onygox.github.io/change-the-vote/ and is constantly being updated.
 
-<img src=https://parsons.edu/dt/wp-content/uploads/sites/14/2020/05/Change-The-Vote-Trailer.gif>
+<img src=https://parsons.edu/dt/wp-content/uploads/sites/14/2020/05/Change-The-Vote-Trailer.gif width=%100>
 
 # Preliminary Notes
 
